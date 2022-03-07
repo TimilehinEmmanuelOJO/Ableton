@@ -82,4 +82,27 @@ ul{
   width: 80px; height: auto;
 }
 .navbar-right{ margin: auto 0;}
+
+/*Collage section*/
 span{color: blue;}
+.collage{
+  display: flex;
+}
+.collage img{
+  width: 500px;
+  height: 500px;
+}
+.yellow{
+  width: 700px;
+  height: 700px;
+  background-color: rgba(251, 255, 167, 1);
+}
+.yellow img{
+  width: 400px;
+  height: 300px;
+}
+/*video section*/
+.vid{
+  display: grid;
+  justify-content: center;
+}
