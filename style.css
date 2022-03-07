@@ -106,3 +106,14 @@ span{color: blue;}
   display: grid;
   justify-content: center;
 }
+/*Picture Section*/
+.pic-flex{
+  display: flex;
+}
+.green-div{
+  background-color: rgba(182, 255, 192, 1);
+  height: 900px; width: 700px;
+}
+.pic-div{
+  display: grid;
+}
