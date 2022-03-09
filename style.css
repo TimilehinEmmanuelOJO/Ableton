@@ -52,6 +52,7 @@ a{
     cursor: pointer;
     color: #000000;
 }
+a:hover{color: black;}
 h1, h2{
     line-height: 1.2;
 }
@@ -479,7 +480,7 @@ line-height: 24px;
 margin-left: 20px;
 }
 button{
-  width: 96px; margin-left: 0;
+  width: 96px; margin-left: -5px;
   border: none; height: 44px;
   background-color: #0000FF;
   color: #ffff;
@@ -554,7 +555,7 @@ font-weight: 400;
 line-height: 24px;
 
 }
-#sel2{
+#country{
   width: 210px;
   height: 34px;
   background-color: #EEEEEE;
@@ -564,5 +565,35 @@ line-height: 24px;
 font-size: 16px;
 font-weight: 400;
 line-height: 24px;
-
+}
+.foot{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 66px;
+}
+.cont{display: flex; justify-content: space-between;}
+.cont a{
+  font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+margin-left: 10px;
+}
+.log{
+  display: flex;
+}
+.log p{
+  font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+margin-left: 10px;
+}
+.log img{
+  margin-top: 10px;
+  width: 45px;
+  height: 21px;
+  margin-left: 10px;
 }
