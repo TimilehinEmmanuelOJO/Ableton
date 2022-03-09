@@ -156,9 +156,10 @@ span{color: blue;}
   justify-content: center;
   position: relative;
   z-index: 1;
+  margin-bottom: 102px;
 }
 .image{
-  margin: auto 0;
+  margin: 100px 0;
   position: relative;
   z-index: 2;
   left: 100px;
@@ -169,29 +170,151 @@ span{color: blue;}
   height: 300px;
   margin-left: 200px;
 }
+.collage-text p{
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+.collage-text strong{
+  font-size: 28px;
+  line-height: 42px;
+  margin-bottom: 21px;
+  width: 794px;
+  font-weight: 400;
+}
+.ppp{
+  font-size: 17.6px;
+  line-height: 30px;
+  font-weight: small;
+  margin-bottom: 98px;
+  color: rgba(0, 0, 0, 1);
+}
 /*video section*/
 .vid{
   display: grid;
   justify-content: center;
+  margin-bottom: 130px;
+}
+.video-text p{
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+.video-text strong{
+  font-size: 26.9px;
+  line-height: 42px;
+  margin-bottom: 21px;
+  width: 796px;
+  font-weight: 400;
+}
+.ooo{
+  font-size: 17.6px;
+  font-weight: 100;
+  margin-bottom: 98px;
+  color: rgba(99, 93, 93, 1);
 }
 /*Picture Section*/
 .pic-flex{
   display: flex;
 }
+.pic-flex img{
+  width: 600px;
+  height: 550px;
+  margin: auto 0;
+  position: relative;
+  z-index: 3;
+  right: 100px;
+}
 .green-div{
   background-color: rgba(182, 255, 192, 1);
   height: 900px; width: 700px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 102px;
 }
 .pic-div{
   display: grid;
 }
-/**/
+.pic-div img{
+  margin-top: 100px;margin-left: 200px;
+  width: 400px; height: 300px;
+  position: relative;z-index: 2;
+}
+.picture-text p{
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+.picture-text strong{
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 21px;
+  width: 873px;
+  font-weight: 400;
+}
+.rrr{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 100;
+  margin-bottom: 98px;
+  color: rgba(99, 93, 93, 1);
+}
+/*Wide pic section*/
+.wide-pic img{
+  width: 1000px;
+  height: 563px;
+  margin: 0 auto;
+  margin-bottom: 109px;
+}
+.wide-pic-text{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.wide-pic-text h2{
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 21px;
+  width: 873px;
+  font-weight: 700;
+}
+.aaa{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 100;
+  width: 873px;
+  margin-bottom: 21px;
+  }
+.bbb{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 100;
+  width: 873px;
+  margin-bottom: 98px;
+  }
+/* purple pic roll*/
 .purple-div{
   width: 800px;
   height: 700px;
   background-color: rgba(213, 179, 255, 1);
   margin: 0 auto;
   display: flex;
+  position: relative;
+  z-index: 2;
+}
+.ims1{
+width: 400px;
+height: 300px;
+position: relative;
+z-index: 2;left: -100px;margin: auto 0;
+}
+.ims2{
+  width: 500px;
+  height: 500px;
+  position: relative;
+  z-index: 2;
+  margin: auto 0;left: 100px;
 }
 /**/
 .combine{
