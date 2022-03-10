@@ -142,8 +142,62 @@ ul{
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    margin-top: -8px;
+    margin-top: -7px;
   }
+  /*dropdown*/
+  a{color: black; text-decoration: none; }a:hover{color: black;}
+  .extension-grid{
+      display: none;
+      margin-left: 30px;
+      margin-top: 50px;
+    }
+    .extension-grid h2{
+      font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    }
+    .ext-flex{
+        display: flex;
+        gap: 30px;
+    }
+    .ext-flex a{
+      font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+    }
+    .extension-flex{
+        display: flex;
+        gap: 100px;
+    }
+    .more h4{
+      font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+    }
+    .more a{
+      font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+    }
   button i{margin-left: 5px; margin-top: 2px;}
   
 .navbar-left ul li img{
@@ -171,6 +225,8 @@ letter-spacing: 0em;
 text-align: left;
   }
 .li2:hover{color: black;}
+.show{display: grid;}
+
 /*main Heading Section*/
 .main{
 
