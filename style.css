@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 /*Utilities section*/
 
@@ -9,9 +11,43 @@
 body{
     line-height: 1.6;
     background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     max-width: 100%;
     color: rgb(0, 0, 0);
+    display: block;
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-size: 16px;
+    line-height: 1.5;
+    --abl-line-height: $line-height-m;
+    --abl-desktop-breakpoint: 1024;
+    font-weight: normal;
+    color: #000;
+    background-color: #F3F3F3;
+    overflow-x: hidden;  
+}
+/*body {
+  font-size: 16px;
+  font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.5;
+  --abl-line-height: $line-height-m;
+  --abl-desktop-breakpoint: 1024;
+  font-weight: normal;
+  color: #000;
+  background-color: #F3F3F3;
+  overflow-x: hidden;
+}*/
+
+html, input, select, textarea {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
@@ -87,17 +123,53 @@ ul{
     display: flex;
     gap: 30px;
   }
-  .navbar-left ul li{font-size: 18px}
+  .navbar-left ul li{
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
   .navbar-left ul li:hover{color: black;}
+  .dropbtn{
+    color: rgba(255, 118, 77, 1);
+    background: none;
+    font-weight: 700;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: -8px;
+  }
+  button i{margin-left: 5px; margin-top: 2px;}
   
 .navbar-left ul li img{
   width: 80px; height: auto;
 }
 .navbar-right{ margin: auto 0; margin-right: 30px;}
 .navbar-right ul{display: flex;gap: 25px;}
-.li1{font-size: 18px;color: rgba(0, 0, 255, 1);
-}
-.li2{font-size: 12px;margin-top: 4px;}
+.li1{
+  color: rgba(0, 0, 255, 1);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  }
+.li2{font-size: 12px;margin-top: 5px;
+  font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+  }
 .li2:hover{color: black;}
 /*main Heading Section*/
 .main{
@@ -108,6 +180,14 @@ ul{
 }
 .main-nav ul li{display: flex;
   margin-left: 30px;
+  font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+
 }
 .main-nav ul li:hover{
   color: black;
