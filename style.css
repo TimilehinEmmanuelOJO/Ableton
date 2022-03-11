@@ -28,7 +28,6 @@ body{
     --abl-desktop-breakpoint: 1024;
     font-weight: normal;
     color: #000;
-    background-color: #F3F3F3;
     overflow-x: hidden;  
 }
 /*body {
@@ -116,12 +115,22 @@ nav{
   height: 91px;
   justify-content: space-between;
 }
+.nav-img{
+  width: 60px;
+  height: 28px;
+}
 ul{
   display: flex;
+
 }
 .navbar-left{
+  display: flex;
    margin: auto 0;
    margin-left: 30px;
+   gap: 30px
+  }
+  .navbar-left button{
+    
   }
   .navbar-left ul{
     display: flex;
@@ -194,7 +203,6 @@ ul{
   line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
-  
     }
     .more a{
       font-family: Roboto;
@@ -240,33 +248,53 @@ text-align: left;
 }
 .main-nav{
   display: flex;
-  margin: 30px 0;
+  margin: auto 0;
+  background-color: #ffffff;
+  opacity: 0.9;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 .main-nav a{display: flex;
-  margin-left: 30px;
   font-family: Roboto;
 font-size: 16px;
 font-style: normal;
-font-weight: 400;
+font-weight: 700;
 line-height: 21px;
 letter-spacing: 0em;
 text-align: left;
-
+margin: auto 30px;
 }
-.main-nav ul li:hover{
-  color: black;
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  .main-nav a {
+    font-size: 80%;
+  }
+  .nav-img{
+    width: 50%;
+  }
+}
+ /* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  .nav-hide{
+    display: none;
+  }
+  .navbar-right{display: none;}
 }
 .main-img{
+  display: flex;
   width: 1140px;
   margin: 0 auto;
   margin-bottom: 102px;
 }
-span{color: blue;}
 .main-text{
-  
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
+span{color: blue;}
 .main-text h2{
-  margin-left: 300px;
   font-family: Roboto;
 font-size: 26px;
 font-style: normal;
@@ -276,9 +304,7 @@ letter-spacing: 0em;
 text-align: left;
 margin-bottom: 21px;
 }
-
 .ppp{
-  margin-left: 300px;
   font-family: Roboto;
 font-size: 18px;
 font-style: normal;
@@ -323,6 +349,11 @@ margin-bottom: 98px;
   height: 300px;
   margin-left: 200px;
 }
+.collage-text{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
 .collage-text h2{
   font-family: Roboto;
 font-size: 26px;
@@ -332,7 +363,6 @@ line-height: 42px;
 letter-spacing: 0em;
 text-align: left;
 margin-bottom: 21px;
-margin-left: 300px;
 }
 .ppp{
   font-family: Roboto;
@@ -345,10 +375,18 @@ text-align: left;
 margin-bottom: 98px;
 }
 /*video section*/
+.vid-div{
+  display: grid;
+}
 .vid{
   display: grid;
   justify-content: center;
   margin-bottom: 130px;
+}
+.video-text{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 .video-text h2{
   font-family: Roboto;
@@ -359,7 +397,6 @@ line-height: 42px;
 letter-spacing: 0em;
 text-align: left;
 margin-bottom: 21px;
-margin-left: 300px;
 }
 .ooo{font-family: Roboto;
   font-size: 20px;
@@ -368,10 +405,12 @@ margin-left: 300px;
   line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
-margin-bottom: 98px;
-margin-left: 300px;  
+  margin-bottom: 98px;
 }
 /*Picture Section*/
+.picture{
+  display: grid;
+}
 .pic-flex{
   display: flex;
 }
@@ -398,7 +437,11 @@ margin-left: 300px;
   width: 400px; height: 300px;
   position: relative;z-index: 2;
 }
- 
+ .picture-text{
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+ }
 .picture-text h2{
   font-family: Roboto;
 font-size: 30px;
@@ -408,7 +451,6 @@ line-height: 42px;
 letter-spacing: 0em;
 text-align: left;
 margin-bottom: 21px;
-margin-left:300px ;
 }
 .rrr{
   font-family: Roboto;
@@ -419,14 +461,21 @@ line-height: 30px;
 letter-spacing: 0em;
 text-align: left;
 margin-bottom: 98px;
-margin-left: 300px;
 }
 /*Wide pic section*/
+.wide-pic{
+  display: grid;
+}
 .wpimg{
-  width: 1000px;
+  width: 1100px;
   height: 563px;
-  margin-left: 170px;
+  margin: 0 auto;
   margin-bottom: 109px; 
+}
+.wide-pic-text{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 .wide-pic-text h2{font-family: Roboto;
   font-size: 30px;
@@ -435,7 +484,6 @@ margin-left: 300px;
   line-height: 42px;
   letter-spacing: 0em;
   text-align: left;
-  margin-left: 300px;
 }
 .aaa{
   font-family: Roboto;
@@ -446,7 +494,6 @@ line-height: 30px;
 letter-spacing: 0em;
 text-align: left;
 margin-bottom: 21px;
-margin-left: 300px;
   }
 .bbb{font-family: Roboto;
   font-size: 20px;
@@ -456,9 +503,11 @@ margin-left: 300px;
   letter-spacing: 0em;
   text-align: left;
   margin-bottom: 84px;
-  margin-left: 300px;  
   }
 /* purple pic roll*/
+.pic-roll{
+  display: grid;
+}
 .purple-div{
   width: 800px;
   height: 700px;
@@ -482,6 +531,11 @@ z-index: 2;left: -100px;margin: auto 0;
   z-index: 2;
   margin: auto 0;left: 100px;
 }
+.pic-roll-text{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
   .pic-roll-text h2{
     font-family: Roboto;
 font-size: 24px;
@@ -489,7 +543,6 @@ font-weight: 600;
 line-height: 42px;
 letter-spacing: 0em;
 text-align: left;
-display: flex;justify-content: center;
 margin-bottom: 21px
 }
 .pic-roll-text p{
@@ -500,7 +553,6 @@ font-weight: 400;
 line-height: 30px;
 letter-spacing: 0em;
 text-align: left;
-display: flex;justify-content: center;
 margin-bottom: 82px;
 }
 /*Combine img*/
@@ -650,6 +702,7 @@ button{
 }
 .foot-flex2{
   display: flex;
+  justify-content: space-between;
 }
 .community{
   display: flex;flex-direction: column;
@@ -674,7 +727,7 @@ text-align: left;
 }
 .distributor{
   display: flex;flex-direction: column;
-  margin-left: 160px;
+  width: 340px;
 }
 .distributor h4{
   font-family: Roboto;
@@ -695,7 +748,9 @@ text-align: left;
   text-align: left;
 }
 .lang{
-  margin-left: 305px;
+  width: 340px;
+  position: relative;
+  right: 60px;
 }
 .lang h4{
   font-family: Roboto;
