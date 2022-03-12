@@ -717,6 +717,15 @@
       border: #000 2px;
       margin: 100px 0;
   }
+  @media(max-width:35.21em){
+    .divider2{
+        
+          width: 100%; 
+          background-color:rgba(238, 238, 238, 1);
+          border: #000 2px;
+          margin: 100px 0;
+      }
+  }
   /*footer*/
   footer{
     display: grid;
