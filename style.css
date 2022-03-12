@@ -62,7 +62,7 @@ html, input, select, textarea {
   /*787.36px / 16px = 49.21em*/
   @media(max-width:49.21em){
       body{
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(38, 8, 207);
       }
   }
 /*563.36px / 16px = 35.21em*/
@@ -229,7 +229,7 @@ ul{
   }
 .li2{font-size: 12px;margin-top: 5px;
   font-family: Roboto;
-font-size: 12px;
+font-size: 14spx;
 font-style: normal;
 font-weight: 700;
 line-height: 21px;
@@ -272,7 +272,6 @@ text-align: left;
     border: none;   
   }
   .menu{
-
     display: flex; margin-top:30px; margin-bottom: 0px; margin-left: 30px;
     height: 91px;
     }
@@ -280,14 +279,15 @@ text-align: left;
       width: 70px; height:35px;
   }
   #mn{
-    background-color: blue; padding: 30px;opacity: 0.7;
+    background-color: blue; padding: 30px;opacity: ;
   }
   .menu-grid{
-    
+      color:#ffff;
       display: grid;
       margin-left: 0px;
   }
   .menu-grid a{
+    color:#ffff;
       margin-top: 10px;
       font-size: 16px;
       font-family: Roboto;
@@ -501,8 +501,9 @@ font-weight: 400;
 line-height: 30px;
 letter-spacing: 0em;
 text-align: left;
-margin-bottom: 98px;
+margin-bottom: 21px;
 }
+.pup{display: none;}
 @media (max-width: 61.25em) {
   .yellow{
     width: 480px;
@@ -813,6 +814,12 @@ margin-bottom: 98px;
   .rrr{
   font-size: 16px;
   }
+}
+@media(max-width:49.21em){
+  .picture-text{
+    margin-left:40px;
+  }
+  .picture-text h2{}
 }
 @media(max-width:35.21em){
   .pic-flex img{
