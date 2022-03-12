@@ -619,12 +619,17 @@ font-weight: 400;
 line-height: 30px;
 letter-spacing: 0em;
 text-align: left;
-margin-bottom: 21px;
+margin-bottom: 98px;
 }
 .pup{display: none;}
+@media (max-width: 75em) {
+  .collage-text {
+  margin: 0 auto;
+  }
+}
 @media (max-width: 61.25em) {
   .yellow{
-    width: 480px;
+    width: 580px;
     height: 700px;
   }
   .image{
@@ -634,8 +639,8 @@ margin-bottom: 21px;
     left: 50px;
   }
   .collage img{
-    width: 400px;
-    height:400px;
+    width: 350px;
+    height:350px;
   }
   .yellow img{
     width: 300px;
@@ -654,11 +659,43 @@ margin-bottom: 21px;
   .ppp{
   font-size: 16px;  }
 }
+@media(max-width:49.21em){
+  
+  .yellow{
+    width: 380px;
+    height: 500px;
+  }
+  .image{
+    margin: auto 0;
+    position: relative;
+    z-index: 2;
+    left: 50px;
+  }
+  .collage img{
+    width: 300px;
+    height:300px;
+  }
+  .yellow img{
+    width: 250px;
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+  .collage-text{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .collage-text h2{
+  font-size: 22px;
+  }
+  .ppp{
+  font-size: 16px;  }
+}
 @media(max-width:35.21em){
   .yellow{
-    width: 250px;
+    width: 300px;
     height: 300px;
-    margin-right:0px ;
   }
   .image{
     margin-top: 50px;
@@ -671,9 +708,9 @@ margin-bottom: 21px;
     height:200px;
   }
   .yellow img{
-    width: 200px;
+    width: 180px;
     height: 150px;
-    margin-top: -20px;
+    margin-top: -10px;
     margin-left: 30px;
   }
   .collage-text{
@@ -683,8 +720,10 @@ margin-bottom: 21px;
   }
   .collage-text h2{
   font-size: 16px;
+  line-height: 34px;
   }
   .pup{
+    display: block;
   font-size: 14px;
   font-family: Roboto;
   font-weight: 400;
