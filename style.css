@@ -62,7 +62,7 @@ html, input, select, textarea {
   /*787.36px / 16px = 49.21em*/
   @media(max-width:49.21em){
       body{
-        background-color: rgb(38, 8, 207);
+        background-color: rgb(255, 255, 255);
       }
   }
 /*563.36px / 16px = 35.21em*/
