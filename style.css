@@ -85,7 +85,7 @@ html, input, select, textarea {
   /* 448px / 16px = 28.75em */
   @media (max-width: 28em) {
     body{
-      background-color: rgb(255, 0, 212);  
+      background-color: rgb(255, 255, 255);  
     }
   }
   
@@ -359,6 +359,9 @@ ul{
 }
 /* 448px / 16px = 28.75em */
 @media (max-width: 28em) {
+  .nav-img{
+    margin-top:5px;
+  }
   .extension-grid{display: none;}
   #dropdown{display: none;}
   nav{display: none;}
@@ -491,6 +494,7 @@ margin-bottom: 98px;
 .main-text h3{
   display: none;
 }
+.pimp{display: none;}
 .pop{display: none;}.pomp{display: none;}
 /* 1200px / 16px = 75em */
 @media (max-width: 75em){
@@ -584,43 +588,46 @@ margin-bottom: 98px;
       .main-img img{display: none;}
       .cut-img img{
         display: flex;
-        margin:0 auto ;
-      width: 400px;
+        margin-left:0;
+      width: 335px;
       margin-bottom: 102px;
       }
+
 .main-nav a{
 font-size: 14px;
-margin: auto 10px;
-}.main-img img{
-  display: none;
-  width: 1140px;
-  margin: 0 auto;
-  margin-bottom: 102px;
+margin: auto 0px;
 }
+.cut-img2 img{
+  display: none;
+}
+
 /*https://ableton-production.imgix.net/about/header.jpg*/
 .main-text{
   display: flex;
   flex-direction: column;
   margin: 0 20px;
+  width: 300px;
 }
 .main-text h2{
   display: none;
 }
 .main-text h3{
   display: block;
-  font-family: Roboto;
+  font-family: 'futura';
 font-size: 16px;
 font-style: normal;
 font-weight: 700;
 line-height: 32px;
 }
 .pop{display: none;}
-.pomp{display: block;font-family: Roboto;
+.pomp{display: none;}
+.pimp{display: block;font-family: 'futura';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   margin-bottom: 98px;}
 }
+
 /*Collage section*/
 
 .collage{
@@ -794,8 +801,8 @@ margin-bottom: 9px;
 
 @media (max-width: 28em){
   .yellow{
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 300px;margin-left: 0;
     margin-right:0px ;
   }
   .image{
@@ -805,7 +812,7 @@ margin-bottom: 9px;
     left: 20px;
   }
   .collage img{
-    width: 180px;
+    width: 150px;
     height:180px;
   }
   .yellow img{
@@ -818,7 +825,7 @@ margin-bottom: 9px;
   .collage-text{
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0 auto;width: 300px;
   }
   .collage-text h2{
   font-size: 16px;
@@ -1513,17 +1520,17 @@ margin-bottom: 98px;
 @media(max-width:35.21em){
   .purple-div{
     width: 400px;
-    height: 330px;
+    height: 330px;margin-left: 70px;
   }
   .im1{
-  width: 280px;
-  height: 170px;}
+  width: 200px;margin-left: 20px;
+  height: 150px; margin-top: -250px;}
   .im2{
-    width: 260px;
-    height: 270px;
-    position: relative;
-    z-index: 2;
-    margin: auto 0;left: 50px;
+    width: 200px;
+    height: 230px;
+    position: relative;margin-top: -300px;
+    z-index: 2; margin-left:0;
+
   }
     .pic-roll-text h2{
    font-size: 22px;display: none;
@@ -1531,24 +1538,17 @@ margin-bottom: 98px;
   .pic-roll-text p{
   font-size: 16px;display: none;
   }
-  .pic-roll-text{width: 450px;}
-  .pic-roll-text h3{display: block;font-family: Roboto;
+  .pic-roll-text{width: 400px;margin-left: 30px;}
+  .pic-roll-text h2{display: block;font-family: 'futura';
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
     line-height: 32px;
-    letter-spacing: 0em;
-    text-align: left;
     margin-bottom: 21px;
     }
     .pic-roll-text .pip{display: block;
-    font-family: Roboto;
+    font-family:'futura';
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 0em;
-    text-align: left;
     margin-bottom: 98px;
     }
 }
@@ -1574,7 +1574,7 @@ margin-bottom: 98px;
   font-size: 16px;display: none;
   }
   .pic-roll-text{width: 380px;}
-  .pic-roll-text h3{display: block;font-family: Roboto;
+  .pic-roll-text h3{display: block;font-family: 'futura';
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -1584,7 +1584,7 @@ margin-bottom: 98px;
     margin-bottom: 21px;
     }
     .pic-roll-text .pip{display: block;
-    font-family: Roboto;
+    font-family: 'futura';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1746,11 +1746,11 @@ h5{font-family: 'futura', 'Avenir', -apple-system, BlinkMacSystemFont, 'Segoe UI
   h5{
       display: flex;
       margin-top: 40px; 
-      margin-left: 30px; 
+      margin-left: 20px; 
       margin-bottom: 50px;
       font-size: 20px;font-weight: 700;
   }
-  #ap{display: block}
+  #ap{display: block;margin-top: -40px;}
   .txt i{font-size: 12px;}
 }
 @media (max-width: 28em){
