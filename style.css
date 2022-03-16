@@ -470,6 +470,14 @@ margin-bottom: 98px;
 /* 1200px / 16px = 75em */
 @media (max-width: 75em){
   .main-img img{width:1000px ;height:auto }
+  .ppp{
+    font-size: 1.25rem;
+      line-height: 1.5;
+  font-family: 'futura', 'Avenir', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 98px;
+  }
 }
 /* 980px / 16px = 61.25em */
 @media (max-width: 61.25em) {
@@ -962,7 +970,7 @@ margin-bottom: 98px;
       width: 500px;
       height: 450px;
       margin-top: 200px;
-      margin-left: -100px;
+    
     }
     .green-div{
       background-color: rgba(182, 255, 192, 1);
@@ -972,8 +980,8 @@ margin-bottom: 98px;
       margin-bottom: 102px;
     }
     .pic-div img{
-      margin-top: 100px;margin-left: 200px;
-      width: 350px; height: 250px;
+      margin-top: 100px;margin-left: 100px;
+      width: 400px; height: 300px;
       position: relative;z-index: 2;
     }  
 }
@@ -1174,8 +1182,8 @@ margin-bottom: 98px;
 
   @media (max-width: 75em){
       .wide-pic img{
-          width: 900px;
-          height: 483px; 
+          width: 1000px;
+          height: 500px; 
         }
   }
   @media (max-width: 61.25em) {
@@ -1353,15 +1361,32 @@ width: 800px;
 margin-bottom: 98px;
 }
 .pic-roll-text h3{display: none;}.pic-roll-text .pip{display: none;}
+@media(max-width: 75em){
+  .purple-div{
+    width: 800px;
+    height: 600px;
+  }
+  .im1{
+  width: 350px;
+  height: 250px;margin-top: -400px;}
+  .im2{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    z-index: 2;
+    margin: auto 0;margin-top: -500px;
+    display: flex; justify-self: end;
+  }
+}
 @media (max-width: 61.25em) {
   .purple-div{
     width: 700px;
     height: 600px;
   }
-  .ims1{
+  .im1{
   width: 350px;
   height: 250px;}
-  .ims2{
+  .im2{
     width: 400px;
     height: 400px;
     position: relative;
@@ -1380,10 +1405,10 @@ margin-bottom: 98px;
     width: 400px;
     height: 330px;
   }
-  .ims1{
+  .im1{
   width: 280px;
   height: 170px;}
-  .ims2{
+  .im2{
     width: 260px;
     height: 270px;
     position: relative;
@@ -1422,10 +1447,10 @@ margin-bottom: 98px;
     width: 300px;
     height: 250px;
   }
-  .ims1{
+  .im1{
   width: 250px;
   height: 150px;}
-  .ims2{
+  .im2{
     width: 1200px;
     height: 200px;
     position: relative;
