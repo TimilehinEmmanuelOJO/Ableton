@@ -59,26 +59,26 @@ html, input, select, textarea {
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
     body {
-      background-color: rgb(255, 0, 0);
+      background-color: rgb(255, 255, 255);
     }
   }
   
   /* 980px / 16px = 61.25em */
   @media (max-width: 61.25em) {
     body {
-      background-color:rgb(157, 255, 0);
+      background-color:rgb(255, 255, 255);
     }
   }
   /*787.36px / 16px = 49.21em*/
   @media(max-width:49.21em){
       body{
-        background-color: rgb(0, 255, 221);
+        background-color: rgb(255, 255, 255);
       }
   }
 /*563.36px / 16px = 35.21em*/
   @media(max-width:35.21em){
     body{
-      background-color: rgb(0, 204, 255);
+      background-color: rgb(255, 255, 255);
     }
 }
   
@@ -166,9 +166,15 @@ ul{
     font-weight: normal;
     margin-top: -2px;
   }
-  .plu{}
+  
+
+
+
+
   /*dropdown*/
-  a{color: black; text-decoration: none; }a:hover{color: black;}
+  .drop h2{display: none;}.drop a{display: none;}
+  a{color: black; text-decoration: none; }
+  a:hover{color: black;}
   .extension-grid{
       display: none;
       margin-left: 30px;
@@ -177,13 +183,11 @@ ul{
     }
     .show{display: flex;}
     .extension-grid h2{
-      font-family: Roboto;
+      font-family: 'futura';
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: 42px;
-    letter-spacing: 0em;
-    text-align: left;
     margin-top: 40px;
     margin-bottom: 10px;
     }
@@ -192,35 +196,28 @@ ul{
         gap: 30px;
     }
     .ext-flex a{
-      font-family: Roboto;
+      font-family: 'futura';
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
     }
     .extension-flex{
         display: flex;
         gap: 100px;
     }
     .more h4{
-      font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
+      font-family: 'futura';
+  font-size: 20px;
   font-weight: 700;
   line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
     }
     .more a{
-      font-family: Roboto;
-  font-size: 18px;
+      font-family: 'futura';
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
     }
   button i{margin-left: 8px; margin-top: 2px; font-size: 14px;font-weight: 700;}
   
@@ -257,10 +254,12 @@ ul{
     width: 100%; 
     background-color:#EEEEEE
 }
-
-
 .menu{display: none;}
 .menu-grid{display: none;}
+
+
+
+
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
   .main-nav a {
@@ -282,7 +281,7 @@ ul{
 }
  /* 980px / 16px = 61.25em */
 @media (max-width: 61.25em) {
- 
+  .drop h2{display: block;}.drop a{display: block;}
   .nav-img{
     width: 50px;
     height: 28px;
@@ -296,7 +295,7 @@ ul{
     background-color:#EEEEEE;
   margin-top: -40px;}
   .drop{display: none;}
-  .open{display: grid;}
+  .open{display: grid;background-color: blue;}
   .butt{
     display: flex;
     color: black;
@@ -310,48 +309,64 @@ ul{
   .menu{
     display: flex; 
     margin-top:30px; 
-    margin-bottom: 0px; margin-left: 30px;
+    margin-bottom: 0px; margin-left: 20px;
     height: 91px;
     }
   .menu img{
       width: 70px; height:35px;
   }
   #mn{
-    background-color: blue; padding: 30px;opacity: ;
+    background-color: blue; padding: 20px;opacity: ;
   }
+  
   .menu-grid{
       color:#ffff;
       display: grid;
-      margin-left: 0px;
+      margin-top:0px;
   }
   .menu-grid a{
-    color:#ffff;
-      margin-top: 10px;
-      font-size: 16px;
-      font-family: Roboto;
-      font-weight: 600;
+    color:rgb(255, 255, 255);
+      margin-top: 15px;
+      font-size: 20px;
+      font-family: 'futura';
+      font-weight: 400;
   }
   .menu-grid h2{
-      font-family: Roboto;
+      font-family: 'futura';
       margin-top: 20px;
-      font-size: 26px;
+      font-size: 26px;color: #5eff00;
   }
   .men-grid{
-      display: grid;
+      display: grid;color: rgb(255, 255, 255);
+  }
+  .drop h2{
+    color:rgb(255, 255, 255);
+      margin-top: 15px;
+      font-size: 20px;
+      font-family: 'futura';
+      font-weight: 400;margin-left: 20px;
+  }
+  .men-grid a{
+    color:rgb(255, 255, 255);
+      margin-top: 15px;
+      font-size: 12px; margin-left: 20px;
+      font-family: 'futura';
+      font-weight: 400;
   }
   .extension-grid{
       display: flex;
       justify-content: space-between;
-      margin: 0 0;
-  }
+      margin: 30px 0;overflow-x:scroll ;width: 1000px;}
+  
+  .moreee{margin-left: 20px;width: 500px; }
   .moreee h4{
-      font-family: Roboto;
-      margin-top: 10px;
-      font-weight: 700;
+      font-family: 'futura'; color: white;
+      margin-top: 10px;font-size: 12px;
+      font-weight: 400;
   }
   .moreee a{
       font-size: 12px;
-      font-weight: 400;
+      font-weight: 400;color: white;
   }
 }
 @media(max-width:49.21em){
@@ -479,7 +494,7 @@ span{color: blue;}
 .main-text h1{
   font-family: 'futura', 'Avenir', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 font-size: 1.875em;
-font-weight: normal;
+font-weight: bold;
 line-height: 42px;
 margin-bottom: 21px;
 }
@@ -487,7 +502,7 @@ margin-bottom: 21px;
   font-size: 1.25rem;
     line-height: 1.5;
 font-family: 'futura', 'Avenir', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-weight: bolder;
+font-weight: lighter;
 text-align: left;
 margin-bottom: 98px;
 }
@@ -519,10 +534,10 @@ margin-bottom: 98px;
   .main-text h1{display: none;
   }
   .main-text h3{display:block;
-     font-size: 1.15rem;
+     font-size: 24px;
     font-weight: bold; line-height: 36px }
   .ppp{color: ;
-  font-size: 0.95rem;
+  font-size: 16px;
   }
 }
 /*787.36px / 16px = 49.21em*/
@@ -538,11 +553,12 @@ margin-bottom: 98px;
   .main-text h1{display: none;
   }
   .main-text h3{display:block;
-     font-size: 1.05rem;
+     font-size: 22px;
     font-weight: bold; line-height: 36px }
   .ppp{display: none;
   }
-  .pop{display: block; margin-bottom: 98px;}
+  .pop{display: block;
+    font-size: 16px; margin-bottom: 98px;}
 
 }
 /*563.36px / 16px = 35.21em*/
@@ -562,7 +578,7 @@ width: 550px;
   }
   .main-text{width: 450px;margin-left:40px; margin-top: 40px;}
   .main-text h2{
-    font-size: 16px;
+    font-size: 20px;
     line-height: 30px;
     }
     .ppp{
@@ -578,7 +594,7 @@ font-weight: 400;
 line-height: 30px;
 margin-bottom: 98px;
     }
-    .pomp{display: block;margin-bottom: 90px;}
+    .pomp{display: block;margin-bottom: 50px; font-size: 16px;}
 }
 @media (max-width: 28em){
   /*.main img{display: none;}*/
@@ -646,7 +662,7 @@ line-height: 32px;
   justify-content: center;
   position: relative;
   z-index: 1;
-  margin-bottom: 102px;
+  margin-bottom: 60px;
 }
 .image{
   width: 41.66667vw;
@@ -678,13 +694,13 @@ line-height: 32px;
   font-family: 'futura', 'Avenir', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 font-size: 1.875rem;
 line-height: 1.4;
-font-weight: normal;
+font-weight: bold;
 margin-bottom: 21px;
 }
 .pap{  font-family: 'futura', 'Avenir', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.25rem;
     line-height: 1.5;
-    font-weight: normal;
+    font-weight: lighter;
 text-align: left;
 margin-bottom: 9px;
 }
@@ -722,10 +738,10 @@ margin-bottom: 9px;
     margin: 0 auto;
   }
   .collage-text h1{
-  font-size: 1.25rem;
+  font-size: 24px; font-weight: bold;
   }
   .pap{
-  font-size: 0.95rem;}
+  font-size: 16px;font-weight: normal;}
 }
 @media(max-width:49.21em){
   
@@ -779,7 +795,7 @@ margin-bottom: 9px;
     width: 180px;
     height: 150px;
     margin-top: -10px;
-    margin-left: 60px;
+    margin-left: 80px;
   }
   .collage-text{
     display: flex;
@@ -791,12 +807,7 @@ margin-bottom: 9px;
   line-height: 34px;
   }
   .pup{
-    display: none;
-  font-size: 14px;
-  font-family: Roboto;
-  font-weight: 400;
-  line-height: 30px;
-  margin-bottom: 98px;  }
+    display: none;  }
 }
 
 @media (max-width: 28em){
@@ -843,7 +854,7 @@ margin-bottom: 9px;
 }
 /*video section*/
 .vid-div{
-  display: grid;
+  display: grid;margin-top: 98px;
 }
 .vid{
   display: grid;
@@ -861,7 +872,7 @@ video{
 .video-text h1{
   font-family: 'futura', 'Avenir', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 font-size: 1.875em;
-font-weight: normal;
+font-weight: bold;
 line-height: 1.4;
 letter-spacing: 0em;
 text-align: left;
@@ -887,7 +898,7 @@ margin-bottom: 98px;
   .video-text h1{display: none;}
   .video-text h3{
     display: block;
-  font-size: 1.04rem;
+  font-size: 24px;
   line-height: 30px;
   font-weight: bold;
   }
@@ -905,7 +916,7 @@ margin-bottom: 98px;
   }
   .video-text h2{
     display: block;
-  font-size: 1.04rem;
+  font-size: 22px;
   line-height: 30px;
   font-weight: bold;}
   .ooo{display: none;}
@@ -923,7 +934,7 @@ margin-bottom: 98px;
   }
   .vid{
     justify-content: center;
-    margin-bottom: 130px;
+    margin-bottom: 70px;margin-top: -100px;
   }
   .iframe{display: none;margin: 0 auto}
   .video-text{
@@ -935,24 +946,18 @@ margin-bottom: 98px;
   .ooo{display: none;
   } 
   .video-text h3{display: block;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
+    font-family: 'futura';
+    font-size: 22px;
     font-weight: 700;
     line-height: 32px;
-    letter-spacing: 0em;
-    text-align: left;
     margin-bottom: 21px;}
   .oop{
     display: block;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'futura';
+    font-size: 16px;
+    font-weight: normal;
     line-height: 32px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-bottom: 21px;
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 28em){
@@ -1035,7 +1040,7 @@ margin-bottom: 98px;
  }
 .picture-text h1{font-family: 'futura', 'Avenir', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.875em;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1.4;
   text-align: left;
   margin-bottom: 21px;
@@ -1093,7 +1098,7 @@ margin-bottom: 98px;
     width: 600px;
   }.picture-text h1{display: none;}
   .picture-text h3{display: block;
-   font-size: 1.25rem; font-weight: bold;
+   font-size: 24px; font-weight: bold;
   }
   .rrr{display: none;}
   .ror{display: block;
@@ -1127,7 +1132,7 @@ margin-bottom: 98px;
 @media(max-width:35.21em){
   .pic-flex img{
     width: 220px;
-    height: 220px;
+    height: 200px;
     margin-top: 130px;
     margin-left: -10px;
   }
@@ -1140,7 +1145,7 @@ margin-bottom: 98px;
   }
   .pic-div img{
     margin-top: 60px;margin-left: 100px;
-    width: 180px; height: 180px;
+    width: 180px; height: 150px;
     position: relative;z-index: 2;
   }
   .picture-text h1{
@@ -1157,15 +1162,15 @@ margin-bottom: 98px;
   .picture-text h3{
     display: block;    
   font-family: 'futura';
-  font-size: 16px;
+  font-size: 22px;
   font-weight: bold;
   line-height: 30px;
   text-align: left;
   margin-bottom: 21px;
   }.ror{
     display: block;
-    font-family: Roboto;
-  font-size: 14px;
+    font-family: 'futura';
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
@@ -1240,7 +1245,7 @@ margin-bottom: 98px;
 .wide-pic-text h1{
   font-family: 'futura', 'Avenir', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.875em;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1.4;
   letter-spacing: 0em;
   text-align: left;
@@ -1278,7 +1283,7 @@ margin-bottom: 98px;
     }
     .wide-pic-text{width: 600px;}
     .wide-pic-text h1{font-family: 'futura';
-      font-size: 22px;
+      font-size: 24px;
      }.aaa{display: none;}
     .aoa{
       display: block;
@@ -1296,11 +1301,11 @@ margin-bottom: 98px;
         }
         .wide-pic-text{width: 500px;}
         .wide-pic-text h1{display: none;}
-        .wide-pic-text h3{display: block; font-size: 1.45rem; font-weight: bold;}
+        .wide-pic-text h3{display: block; font-size: 22px; font-weight: bold;}
   }
   @media(max-width:35.21em){
     .wide-pic img{
-      width: 400px;
+      width: 440px;
       height: 300px; 
     }
     .wide-pic-text h2{display: none;
@@ -1314,8 +1319,8 @@ margin-bottom: 98px;
       }
       .wide-pic-text h3{
         display: block;
-        font-family: Roboto;
-  font-size: 20px;
+        font-family: 'futura';
+  font-size: 22px;
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
@@ -1325,7 +1330,7 @@ margin-bottom: 98px;
       }
       .aoa{
         display: block;
-        font-family: Roboto;
+        font-family: 'futura';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1336,13 +1341,11 @@ margin-bottom: 98px;
       }
       .bob{
         display: block;
-        font-family: Roboto;
+        font-family: 'futura';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
   margin-bottom: 98px;
       }
     }
@@ -1430,7 +1433,7 @@ margin-bottom: 0;}
     width: 800px;
     font-family: 'futura', 'Avenir', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.875em;
-    font-weight: normal;
+    font-weight: bold;
     line-height: 1.4;
     letter-spacing: 0em;
     text-align: left;
@@ -1482,7 +1485,7 @@ margin-bottom: 98px;
   .pic-roll-text h1{display: none;}
     .pic-roll-text h2{
       display: block;
-   font-size: 1.25rem;
+   font-size: 24px;font-weight: bold;
    line-height: 30px;margin-top: 102px;
   }
   .pic-roll-text p{display: none;
@@ -1509,7 +1512,7 @@ margin-bottom: 98px;
   .pic-roll-text h1{display: none;}
     .pic-roll-text h2{
       display: block;
-   font-size: 1.25rem;
+   font-size: 22px;
    line-height: 30px;margin-top: 102px;
   }
   .pic-roll-text p{display: none;
@@ -1542,7 +1545,7 @@ margin-bottom: 98px;
   }
   .pic-roll-text{width: 400px;margin-left: 30px;}
   .pic-roll-text h2{display: block;font-family: 'futura';
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 32px;
     margin-bottom: 21px;
