@@ -975,7 +975,7 @@ margin-bottom: 98px;
 }
 @media (max-width: 28em){
   .vid-div{
-    display: grid;margin-top: -100px;
+    display: grid;margin-top: -10px;
   }
   .vid{
     display: block;
